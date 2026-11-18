@@ -1,13 +1,30 @@
-# Web design site
+# Aion Web Design
 
-The website for my web design business in Wrexham.
+The website for Aion Web Design, a small web design business in Wrexham, North Wales.
 
-## Files
+## Pages
 
-- `index.html` holds the words and structure of the page.
-- `styles.css` holds the colours, fonts and layout.
+| File | Page |
+|---|---|
+| `index.html` | Homepage |
+| `services.html` | Services |
+| `pricing.html` | Pricing |
+| `work.html` | Example work |
+| `about.html` | About me |
+| `contact.html` | Contact details |
+| `privacy.html` | Privacy notice |
+| `404.html` | Shown when a page can't be found |
+| `styles.css` | Colours, fonts and layout for every page |
+| `examples/corner-pantry/` | The practice café website |
 
-## Editing
+## Before going live
 
-Anything in [square brackets] in `index.html` is a placeholder to replace with real details.
-Colours and fonts are listed at the top of `styles.css`.
+Search the files for `todo` or `[` to find every placeholder that needs your real details:
+email, phone, first name, Facebook link, payment terms and the privacy notice date.
+
+The prices on `pricing.html` and the text on `about.html` are drafts. Check them and put them in your own words.
+
+## Making changes
+
+- Words: edit the page's `.html` file. The header and footer appear on every page, so a change there needs making in each file.
+- Colours and fonts: change the values at the top of `styles.css`.

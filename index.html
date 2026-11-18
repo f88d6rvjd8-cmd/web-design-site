@@ -3,172 +3,182 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Web design for Wrexham businesses</title>
-  <meta name="description" content="Simple, friendly websites for small businesses in Wrexham, made and looked after by one local person.">
+  <title>Aion Web Design | Websites for Wrexham businesses</title>
+  <meta name="description" content="Simple, friendly websites for cafés, restaurants, shops and trades in Wrexham, made and looked after by one local person.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Source+Sans+3:wght@400;600&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- HOW TO EDIT: anything in [square brackets] is a placeholder. Replace it with your real details. -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <a class="brand" href="#top">[Your business name]</a>
-    <nav>
-      <a href="#services">What you get</a>
-      <a href="#process">How it works</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#about">About</a>
-      <a class="button" href="#contact">Get in touch</a>
-    </nav>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Aion Web Design home">
+        <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="14" fill="none" stroke="#0B6E8F" stroke-width="4"/><path d="M17 3a14 14 0 0 1 14 14" fill="none" stroke="#F4B942" stroke-width="4" stroke-linecap="round"/><circle cx="17" cy="17" r="4" fill="#101C2C"/></svg>
+        <span>Aion <span class="brand-sub">Web Design</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a class="button" href="contact.html">Get in touch</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="top" class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">Web design in Wrexham</p>
-        <h1>A simple, friendly website for your local business.</h1>
-        <p class="lead">I design, build and look after websites for small businesses in Wrexham. You deal with one person, in plain English, from your first message to launch and beyond.</p>
-        <div class="button-row">
-          <a class="button" href="#contact">Get a free first look</a>
-          <a class="button outline" href="#pricing">See pricing</a>
+  <main id="main">
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Web design in Wrexham</p>
+          <h1>Websites for local businesses, made and looked after by a local person.</h1>
+          <p class="lead">I build clear, phone-friendly websites for cafés, restaurants, shops and trades around Wrexham. You deal with me directly, in plain English, from the first chat to launch and beyond.</p>
+          <div class="button-row">
+            <a class="button" href="contact.html">Get a free first look</a>
+            <a class="button outline" href="pricing.html">See prices</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-card" aria-hidden="true">
-        <div class="browser">
-          <div class="browser-bar"><span></span><span></span><span></span></div>
-          <div class="browser-body">
-            <div class="line wide"></div>
-            <div class="line"></div>
-            <div class="block"></div>
-            <div class="line short"></div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="mock">
+            <div class="browser">
+              <div class="browser-bar"><span></span><span></span><span></span></div>
+              <div class="browser-body">
+                <div class="bar title"></div>
+                <div class="bar"></div>
+                <div class="bar short"></div>
+                <div class="tile-row"><div class="tile warm"></div><div class="tile"></div><div class="tile"></div></div>
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="phone">
+              <div class="phone-screen">
+                <div class="bar title"></div>
+                <div class="bar"></div>
+                <div class="tile warm"></div>
+                <div class="bar short"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="services" class="section">
+    <section class="section white">
       <div class="container">
-        <h2>What you get</h2>
-        <p class="section-intro">Everything a small business needs to look good online and be easy to contact.</p>
-        <div class="cards">
-          <article class="card">
-            <h3>Made for phones first</h3>
-            <p>Most customers will find you on their phone, so every page is designed for a small screen first and looks right on a laptop too.</p>
-          </article>
-          <article class="card">
-            <h3>Clear and easy to use</h3>
-            <p>Your opening hours, what you offer and how to get in touch, all easy to find within a few seconds.</p>
-          </article>
-          <article class="card">
-            <h3>Set up to be found locally</h3>
-            <p>Page titles, descriptions and the areas you serve are set up so search engines understand where you work.</p>
-          </article>
-          <article class="card">
-            <h3>Someone to call</h3>
-            <p>If something breaks or needs changing, you contact me directly. There are no ticket numbers or call centres.</p>
-          </article>
+        <div class="section-head">
+          <h2>What every website includes</h2>
+          <p>The things a small business actually needs online, done properly.</p>
+        </div>
+        <div class="grid four">
+          <article class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>Built for phones</h3><p>Most customers find you on a phone, so every page is designed for a small screen first, with tap-to-call buttons.</p></article>
+          <article class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/></svg></div><h3>Clear and quick</h3><p>Your opening hours, what you offer and how to reach you, all easy to find in seconds.</p></article>
+          <article class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div><h3>Set up to be found</h3><p>Page titles, descriptions and the areas you serve set up so Google understands where you work.</p></article>
+          <article class="card"><div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></div><h3>A real person to call</h3><p>If something needs changing or goes wrong, you contact me directly. No call centres or ticket numbers.</p></article>
         </div>
       </div>
     </section>
 
-    <section id="process" class="section alt">
+    <section class="section">
       <div class="container">
-        <h2>How it works</h2>
+        <div class="section-head">
+          <h2>Who I work with</h2>
+          <p>Small, local businesses that want a good website without the jargon. I have a soft spot for hospitality: I spent around ten years working in professional kitchens, so I know how a café or restaurant actually runs.</p>
+        </div>
+        <div class="chips">
+          <span class="chip">Cafés and coffee shops</span>
+          <span class="chip">Restaurants and pubs</span>
+          <span class="chip">Bakeries and takeaways</span>
+          <span class="chip">Hair and beauty</span>
+          <span class="chip">Independent shops</span>
+          <span class="chip">Local trades</span>
+          <span class="chip">Clubs and community groups</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="container">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>Four simple steps, and you see your site before you pay for anything.</p>
+        </div>
         <ol class="steps">
-          <li><strong>We have a chat.</strong> You tell me about your business and what you want the website to do.</li>
-          <li><strong>I make a first look.</strong> You see a real example of your site before you commit to anything.</li>
-          <li><strong>You tell me what to change.</strong> We adjust the words, photos and layout until you are happy.</li>
-          <li><strong>Launch and ongoing care.</strong> Your site goes live, and I help with updates after that.</li>
+          <li><strong>A quick chat</strong><span>You tell me about your business, your customers and what the website needs to do.</span></li>
+          <li><strong>A free first look</strong><span>I make a sample of your homepage so you can see the style before committing.</span></li>
+          <li><strong>Shape it together</strong><span>We go through the words, photos and layout until you're happy with every page.</span></li>
+          <li><strong>Launch and care</strong><span>Your site goes live on your own web address, and I'm here for updates afterwards.</span></li>
         </ol>
       </div>
     </section>
 
-    <section id="pricing" class="section">
+    <section class="section">
       <div class="container">
-        <h2>Pricing</h2>
-        <p class="section-intro">Clear prices, agreed before any work starts.</p>
-        <div class="cards two">
-          <article class="card">
-            <h3>[Package name, e.g. Starter]</h3>
-            <p class="price">[£ price]</p>
-            <ul>
-              <li>[What is included]</li>
-              <li>[What is included]</li>
-              <li>[What is included]</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>[Package name, e.g. Care plan]</h3>
-            <p class="price">[£ price per month]</p>
-            <ul>
-              <li>[What is included]</li>
-              <li>[What is included]</li>
-              <li>[What is included]</li>
-            </ul>
-          </article>
+        <div class="card work-card">
+          <div class="work-text">
+            <span class="tag">Example project</span>
+            <h2>Corner Pantry Café</h2>
+            <p class="muted">A sample website for a made-up Wrexham café, with a menu you can browse by breakfast, lunch, drinks and cakes, opening hours and contact details. It shows the style and how the site works on a phone.</p>
+            <a class="button outline" href="examples/corner-pantry/index.html">View the example</a>
+          </div>
+          <div class="work-art" aria-hidden="true">
+            <div class="cafe-preview">
+              <div class="cp-brand">Corner Pantry</div>
+              <div class="cp-title">Proper breakfasts, good coffee and Welsh cakes still warm.</div>
+              <span class="cp-pill">See the menu</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="work" class="section alt">
-      <div class="container">
-        <h2>Example work</h2>
-        <p class="section-intro">A practice project: a sample website for a made-up Wrexham café, built to show the style and the way the site works on a phone.</p>
-        <p><a class="button outline" href="[link to your practice site]">View the café example</a></p>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container narrow">
-        <h2>About me</h2>
-        <!-- DRAFT: check this is true and say it in your own words before publishing. -->
-        <p>I'm [your name], based in Wrexham. Before moving into web design I spent about ten years working as a chef, and I now work in tech retail, explaining computers to customers every day. I like turning complicated things into something simple, and that is how I build websites too.</p>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="container narrow">
-        <h2>Common questions</h2>
-        <details>
-          <summary>Who owns my website and domain?</summary>
-          <p>[Check and confirm: for example, "You do. Your domain is registered in your name."]</p>
-        </details>
-        <details>
-          <summary>Do we need to meet in person?</summary>
-          <p>[Your answer, e.g. "Happy to meet locally, or we can do everything by phone and email."]</p>
-        </details>
-        <details>
-          <summary>How long does a website take?</summary>
-          <p>[Your typical timescale]</p>
-        </details>
-        <details>
-          <summary>What if I need a change later?</summary>
-          <p>[Your answer, e.g. "Just message me and I will make it."]</p>
-        </details>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="container narrow">
-        <h2>Tell me about your business</h2>
-        <p>Send a few details about what you do and I will reply myself.</p>
-        <p class="contact-lines">
-          Email: [your email address]<br>
-          Phone: [your phone number]<br>
-          Wrexham, North Wales
-        </p>
+    <section class="section dark cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>Thinking about a website?</h2>
+          <p>Tell me a little about your business and I'll show you a free first look before you commit to anything.</p>
+        </div>
+        <a class="button light" href="contact.html">Get a free first look</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <span class="brand-small">[Your business name]</span>
-      <span>Web design in Wrexham</span>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Aion Web Design</p>
+          <p>Simple, friendly websites for small businesses in Wrexham and North East Wales, made and looked after by one local person.</p>
+        </div>
+        <div>
+          <h3>Pages</h3>
+          <ul class="footer-links">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul class="footer-links">
+            <li><span class="todo">[your email address]</span></li>
+            <li><span class="todo">[your phone number]</span></li>
+            <li>Wrexham, North Wales</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Aion Web Design</span>
+        <a href="privacy.html">Privacy notice</a>
+      </div>
     </div>
   </footer>
-
 </body>
 </html>
