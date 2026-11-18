@@ -1,0 +1,116 @@
+/* The colours and fonts are listed here. Change them and the whole site changes. */
+:root {
+  --ink: #0F1B2D;
+  --ground: #F4F7FA;
+  --white: #FFFFFF;
+  --accent: #0B6E99;
+  --accent-dark: #084F70;
+  --highlight: #FFC857;
+  --muted: #475569;
+  --line: #D5DEE8;
+  --display: 'Sora', system-ui, sans-serif;
+  --body: 'Source Sans 3', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+a { color: var(--accent); }
+a:hover { color: var(--accent-dark); }
+:focus-visible { outline: 3px solid var(--highlight); outline-offset: 3px; }
+
+.container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+.container.narrow { max-width: 760px; }
+
+h1, h2, h3 { font-family: var(--display); letter-spacing: -0.02em; margin: 0; line-height: 1.15; }
+h2 { font-size: 36px; margin-bottom: 12px; }
+h3 { font-size: 21px; margin-bottom: 8px; }
+p { margin: 0 0 16px; }
+
+/* Header */
+.site-header {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 16px; max-width: 1080px; margin: 0 auto; padding: 24px;
+}
+.brand { font-family: var(--display); font-weight: 800; font-size: 22px; color: var(--ink); text-decoration: none; }
+.site-header nav { display: flex; flex-wrap: wrap; gap: 4px 24px; align-items: center; }
+.site-header nav a { color: var(--ink); text-decoration: none; font-weight: 600; padding: 10px 0; }
+.site-header nav a.button { color: var(--white); padding: 11px 20px; }
+
+/* Buttons */
+.button {
+  display: inline-block; background: var(--accent); color: var(--white);
+  text-decoration: none; font-weight: 600; padding: 14px 26px; border-radius: 10px;
+}
+.button:hover { background: var(--accent-dark); color: var(--white); }
+.button.outline { background: transparent; color: var(--accent); border: 2px solid var(--accent); padding: 12px 24px; }
+.button.outline:hover { background: var(--accent); color: var(--white); }
+.button-row { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* Hero */
+.hero {
+  max-width: 1080px; margin: 0 auto; padding: 32px 24px 72px;
+  display: flex; flex-wrap: wrap; gap: 48px; align-items: center;
+}
+.hero-text { flex: 1 1 420px; display: flex; flex-direction: column; gap: 22px; }
+.eyebrow { margin: 0; font-weight: 600; color: var(--accent); letter-spacing: 0.05em; text-transform: uppercase; font-size: 14px; }
+.hero h1 { font-weight: 800; font-size: 52px; text-wrap: balance; }
+.lead { margin: 0; max-width: 520px; font-size: 20px; color: var(--muted); }
+
+/* Simple picture of a web page in a browser window (drawn with CSS, no image file needed) */
+.hero-card { flex: 1 1 320px; display: flex; justify-content: center; }
+.browser { width: 100%; max-width: 420px; background: var(--white); border-radius: 16px; border: 1px solid var(--line); box-shadow: 0 20px 40px rgba(15, 27, 45, 0.12); overflow: hidden; }
+.browser-bar { display: flex; gap: 6px; padding: 14px; background: var(--ink); }
+.browser-bar span { width: 10px; height: 10px; border-radius: 50%; background: #64748B; }
+.browser-body { padding: 24px; display: flex; flex-direction: column; gap: 14px; }
+.line { height: 14px; border-radius: 7px; background: var(--line); }
+.line.wide { width: 80%; height: 20px; background: var(--ink); }
+.line.short { width: 45%; }
+.block { height: 110px; border-radius: 12px; background: var(--highlight); }
+
+/* Sections */
+.section { padding: 72px 0; }
+.section.alt { background: var(--white); }
+.section-intro { color: var(--muted); margin-bottom: 32px; max-width: 620px; }
+
+.cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+.cards.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.card { background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 24px; }
+.section.alt .card { background: var(--ground); }
+.card p { color: var(--muted); margin: 0; }
+.card ul { margin: 0; padding-left: 20px; color: var(--muted); }
+.price { font-family: var(--display); font-weight: 700; font-size: 28px; color: var(--ink) !important; margin-bottom: 12px !important; }
+
+.steps { margin: 24px 0 0; padding-left: 24px; display: grid; gap: 16px; max-width: 760px; }
+.steps li::marker { font-family: var(--display); font-weight: 700; color: var(--accent); }
+
+details { border-bottom: 1px solid var(--line); padding: 16px 0; }
+summary { cursor: pointer; font-weight: 600; font-size: 19px; }
+details p { margin: 12px 0 0; color: var(--muted); }
+
+.contact { background: var(--ink); color: var(--white); }
+.contact h2, .contact p { color: var(--white); }
+.contact-lines { font-size: 20px; }
+
+/* Footer */
+.site-footer { background: #0A1220; color: #CBD5E1; padding: 28px 0; }
+.footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+.brand-small { font-family: var(--display); font-weight: 700; color: var(--white); }
+
+/* Tablets and phones */
+@media (max-width: 900px) {
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .cards, .cards.two { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 38px; }
+  h2 { font-size: 30px; }
+}
